@@ -8,8 +8,8 @@ from trl import SFTTrainer, SFTConfig
 from datasets import load_dataset
 max_seq_length = 2048 # Supports RoPE Scaling internally, so choose any!
 # Get dataset
-flood = "/home/jennifer/.cache/huggingface/hub/datasets--opensar-insight--flood-detection-dataset/snapshots/dbe993776c6f1f42ae010a9ec2fb7f6063dc2df1"
-dataset = load_dataset("flood", data_files = {"train" : flood}, split = "train")
+flood = load_from_disk("/home/jennifer/.cache/huggingface/hub/datasets--opensar-insight--flood-detection-dataset/snapshots/dbe993776c6f1f42ae010a9ec2fb7f6063dc2df1")
+data_files = {"train" : flood}, split = "train"
 
 # 4bit pre quantized models we support for 4x faster downloading + no OOMs.
 # More models at https://huggingface.co/unsloth
