@@ -51,4 +51,3 @@ def preprocess_image_to_data_url(
     b64 = base64.b64encode(raw).decode("utf-8")
     mime = "image/jpeg" if format == "JPEG" else "image/png"
     return f"data:{mime};base64,{b64}"
-
