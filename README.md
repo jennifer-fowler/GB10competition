@@ -1,4 +1,4 @@
-# GB10 Competition: Getting Started
+# GB10 Competition: Additional Information (e.g., running on local machine)
 
 Materials for GB10 hackathons and student competitions. Follow these steps to prepare your computer for the Python notebooks.
 
